@@ -1,10 +1,10 @@
 'use strict';
 
-const EmberAddon = require('ember-cli/lib/broccoli/ember-addon');
+const EmberApp = require('ember-cli/lib/broccoli/ember-app');
 const CssImport = require('postcss-import');
 
 module.exports = function(defaults) {
-  const app = new EmberAddon(defaults, {
+  const app = new EmberApp(defaults, {
     postcssOptions: {
       compile: {
         enabled: true,
